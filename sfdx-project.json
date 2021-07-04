@@ -1,12 +1,27 @@
 {
-  "packageDirectories": [
-    {
-      "path": "force-app",
-      "default": true
+    "packageDirectories": [
+        {
+            "path": "force-app",
+            "default": true,
+            "package": "sf-breg",
+            "versionName": "ver 0.1",
+            "versionNumber": "0.1.0.NEXT",
+            "dependencies": [
+                {
+                    "package": "sf-integration-base",
+                    "versionNumber": "0.1.0.LATEST"
+                }
+            ]
+        }
+    ],
+    "name": "sf-breg",
+    "namespace": "",
+    "sfdcLoginUrl": "https://login.salesforce.com",
+    "sourceApiVersion": "52.0",
+    "packageAliases": {
+        "sf-integration-base": "0Ho67000000Gmj1CAC",
+        "sf-breg": "0Ho67000000Gmj6CAC",
+        "sf-breg@0.1.0-1": "04t67000000tb6CAAQ",
+        "sf-breg@0.1.0-2": "04t67000000tb6MAAQ"
     }
-  ],
-  "name": "sf-breg",
-  "namespace": "",
-  "sfdcLoginUrl": "https://login.salesforce.com",
-  "sourceApiVersion": "52.0"
 }
