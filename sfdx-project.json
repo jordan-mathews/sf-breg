@@ -5,7 +5,7 @@
             "default": true,
             "package": "sf-breg",
             "versionName": "ver 0.1",
-            "versionNumber": "0.1.0.NEXT",
+            "versionNumber": "0.3.0.NEXT",
             "dependencies": [
                 {
                     "package": "sf-integration-base",
@@ -22,6 +22,7 @@
         "sf-integration-base": "0Ho67000000Gmj1CAC",
         "sf-breg": "0Ho67000000Gmj6CAC",
         "sf-breg@0.1.0-1": "04t67000000tb6CAAQ",
-        "sf-breg@0.1.0-2": "04t67000000tb6MAAQ"
+        "sf-breg@0.1.0-2": "04t67000000tb6MAAQ",
+        "sf-breg@0.3.0-1": "04t67000000tb6lAAA"
     }
 }
