@@ -1,7 +1,7 @@
-public with sharing class BregCalloutService {
+public inherited sharing class BregCalloutService {
 
   public Organization getOrganization(String organizationNumber){
-    IntegrationController controller = new IntegrationController();
+    CalloutController controller = new CalloutController();
     controller.initRequest('BREG', 'BREG_GET_ORGANIZATION');
     controller.setUrlParams(organizationNumber);
     controller.sendRequest();
@@ -14,14 +14,14 @@ public with sharing class BregCalloutService {
   }
 
   public List<Organization> searchOrganizations(String name){
-    IntegrationController controller = new IntegrationController();
+    CalloutController controller = new CalloutController();
     controller.initRequest('BREG', 'BREG_SEARCH_ORGANIZATIONS');
     controller.setUrlParams('?navn=' + name);
     controller.sendRequest();
 
     
     EmbededOrganizations organizations = EmbededOrganizations.parseOrganizations(
-      controller.getResponseBody().replaceAll('_embedded', 'embedded')
+      controller.getResponse().getBody().replaceAll('_embedded', 'embedded')
     );
 
     return organizations.embedded.enheter;
