@@ -1,5 +1,9 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<CustomMetadata xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+<?xml version="1.0" encoding="UTF-8" ?>
+<CustomMetadata
+  xmlns="http://soap.sforce.com/2006/04/metadata"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+>
     <label>BREG_GET_ORGANIZATION</label>
     <protected>false</protected>
     <values>
@@ -9,6 +13,19 @@
     <values>
         <field>IntegrationConfiguration__c</field>
         <value xsi:type="xsd:string">BREG</value>
+    </values>
+    <values>
+        <field>MockResponse__c</field>
+        <value xsi:type="xsd:string">{
+&quot;200&quot;:{
+&quot;headers&quot;: null,
+&quot;body&quot;: {&quot;organisasjonsnummer&quot;:&quot;112233445&quot;,&quot;navn&quot;:&quot;SESAM STASJON&quot;,&quot;organisasjonsform&quot;:{&quot;kode&quot;:&quot;AS&quot;,&quot;beskrivelse&quot;:&quot;Aksjeselskap&quot;,&quot;_links&quot;:{&quot;self&quot;:{&quot;href&quot;:&quot;http:\/\/localhost\/enhetsregisteret\/api\/organisasjonsformer\/AS&quot;}}},&quot;postadresse&quot;:{&quot;land&quot;:&quot;Norge&quot;,&quot;landkode&quot;:&quot;NO&quot;,&quot;postnummer&quot;:&quot;0122&quot;,&quot;poststed&quot;:&quot;OSLO&quot;,&quot;adresse&quot;:[&quot;c\/o reder K. Rusing&quot;,&quot;Postboks 1752 Vika&quot;,&quot;&quot;],&quot;kommune&quot;:&quot;OSLO&quot;,&quot;kommunenummer&quot;:&quot;0301&quot;},&quot;registreringsdatoEnhetsregisteret&quot;:&quot;2017-10-20&quot;,&quot;registrertIMvaregisteret&quot;:true,&quot;naeringskode1&quot;:{&quot;beskrivelse&quot;:&quot;Skipsmegling&quot;,&quot;kode&quot;:&quot;52.292&quot;},&quot;antallAnsatte&quot;:50,&quot;forretningsadresse&quot;:{&quot;land&quot;:&quot;Norge&quot;,&quot;landkode&quot;:&quot;NO&quot;,&quot;postnummer&quot;:&quot;0101&quot;,&quot;poststed&quot;:&quot;OSLO&quot;,&quot;adresse&quot;:[&quot;Tyvholmen 1&quot;,null,null,&quot;&quot;],&quot;kommune&quot;:&quot;OSLO&quot;,&quot;kommunenummer&quot;:&quot;0301&quot;},&quot;stiftelsesdato&quot;:&quot;2017-10-20&quot;,&quot;registrertIForetaksregisteret&quot;:true,&quot;registrertIStiftelsesregisteret&quot;:false,&quot;registrertIFrivillighetsregisteret&quot;:false,&quot;konkurs&quot;:false,&quot;underAvvikling&quot;:false,&quot;underTvangsavviklingEllerTvangsopplosning&quot;:false,&quot;maalform&quot;:&quot;Bokm\u00e5l&quot;,&quot;_links&quot;:{&quot;self&quot;:{&quot;href&quot;:&quot;http:\/\/localhost\/enhetsregisteret\/api\/enheter\/112233445&quot;}}}
+},
+&quot;500&quot;:{
+&quot;headers&quot;:null,
+&quot;body&quot;:&quot;Internal Server Error&quot;
+}
+}</value>
     </values>
     <values>
         <field>Path__c</field>
