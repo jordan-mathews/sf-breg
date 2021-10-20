@@ -1,0 +1,56 @@
+<template>
+  <div class="slds-m-around_medium slds-scrollable_y" style="height: 20rem">
+    <template if:true={searchResults}>
+      <table class="slds-table slds-table_cell-buffer slds-table_bordered slds-table_fixed-layout slds-table_striped">
+        <thead>
+          <tr class="slds-line-height_reset">
+            <th scope="col">
+              <div class="slds-cell-wrap" title="Business Name">Bedrift</div>
+            </th>
+            <th scope="col">
+              <div class="slds-cell-wrap" title="Address">Adresse</div>
+            </th>
+            <th scope="col">
+              <div class="slds-cell-wrap" title="Location">Sted</div>
+            </th>
+            <th scope="col">
+              <div class="slds-cell-wrap" title="New Customer">Ny Kunde</div>
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+          <template for:each={searchResults} for:item="acc">
+            <tr class="slds-hint-parent" key={acc.organisasjonsnummer}>
+              <th data-label="Business Name" scope="row">
+                <div if:true={acc.navn} class="slds-cell-wrap" title="Business Name">{acc.navn}</div>
+              </th>
+              <td class="slds-cell-wrap" data-label="Address">
+                <div if:true={acc.forretningsadresse} class="slds-cell-wrap" title="Address">
+                  {acc.forretningsadresse.adresse}
+                </div>
+              </td>
+              <td data-label="Location">
+                <div if:true={acc.forretningsadresse} class="slds-cell-wrap" title="Location">
+                  {acc.forretningsadresse.poststed}
+                </div>
+              </td>
+              <td data-label="New Customer">
+                <div class="slds-cell-wrap" title="New Customer">
+                  <lightning-button-icon
+                    icon-name="utility:add"
+                    value={acc.organisasjonsnummer}
+                    onclick={createAccount}
+                  >
+                  </lightning-button-icon>
+                </div>
+              </td>
+            </tr>
+          </template>
+        </tbody>
+      </table>
+    </template>
+    <template if:true={isLoading}>
+      <lightning-spinner alternative-text="Loading" variant="brand"></lightning-spinner>
+    </template>
+  </div>
+</template>

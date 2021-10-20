@@ -1,0 +1,4 @@
+<aura:component implements="force:lightningQuickAction">
+  <c:organizationSearch></c:organizationSearch>
+  <aura:handler name="init" value="{!this}" action="{!c.init} " />
+</aura:component>
