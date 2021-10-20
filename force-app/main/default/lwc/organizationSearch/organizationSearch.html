@@ -1,0 +1,20 @@
+<template>
+  <div class="slds-m-around_medium">
+    <lightning-layout vertical-align="end" class="slds-m-bottom_small">
+      <lightning-layout-item flexibility="grow">
+        <lightning-input
+          type="search"
+          onchange={handleSearchKeyChange}
+          label="Søk etter bedrifter..."
+          value={searchKey}
+          onkeypress={handleEnter}
+        >
+        </lightning-input>
+      </lightning-layout-item>
+      <lightning-layout-item class="slds-p-left_xx-small">
+        <lightning-button label="Søk" onclick={handleSearch}> </lightning-button>
+      </lightning-layout-item>
+    </lightning-layout>
+  </div>
+  <c-organization-search-results></c-organization-search-results>
+</template>
