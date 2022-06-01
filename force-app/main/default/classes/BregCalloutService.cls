@@ -20,7 +20,7 @@ public inherited sharing class BregCalloutService {
   public OrganizationSearchResponse searchOrganizations(String name) {
     CalloutController controller = new CalloutController();
     controller.initRequest('BREG', 'BREG_SEARCH_ORGANIZATIONS');
-    controller.setUrlParams('?navn=' + name);
+    controller.setUrlParams('?navn=' + name.trim().replaceAll(' ', '%20'));
     controller.sendRequest();
 
     OrganizationSearchResponse resp = new OrganizationSearchResponse();
