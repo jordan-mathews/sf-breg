@@ -4,7 +4,20 @@ This package is contains Lightning Web Components and classes for integrating wi
 
 ## Features
 
-The search component can be used in a global action or on a lightning page layout
+The search component can be used in a global action or on a lightning page layout.
+
+![image](https://user-images.githubusercontent.com/58025394/171374250-3582d750-1576-48e3-8047-540dcb9a3ba5.png)
+
+The `BregCalloutService` class supports the following methods:
+
+Search for organizations by name-
+`searchOrganization(String name)`
+
+Get organization by organization number-
+`getOrganization(String organizationNumber)`
+
+
+
 ## Dependencies
 This package is dependent on the following packages:
 
