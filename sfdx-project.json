@@ -20,12 +20,6 @@
   "sourceApiVersion": "52.0",
   "packageAliases": {
     "sf-integration-base": "0Ho67000000Gmj1CAC",
-    "sf-breg": "0Ho67000000Gmj6CAC",
-    "sf-breg@0.1.0-1": "04t67000000tb6CAAQ",
-    "sf-breg@0.1.0-2": "04t67000000tb6MAAQ",
-    "sf-breg@0.3.0-1": "04t67000000tb6lAAA",
-    "sf-breg@0.3.0-2": "04t670000005qSFAAY",
-    "sf-breg@0.3.0-3": "04t670000005qSUAAY",
-    "sf-breg@0.3.0-5": "04t67000000EA0FAAW"
+    "sf-breg": "0Ho67000000Gmj6CAC"
   }
 }

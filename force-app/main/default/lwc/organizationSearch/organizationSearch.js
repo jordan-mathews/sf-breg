@@ -15,6 +15,7 @@ export default class OrganizationSearch extends LightningElement {
 
   handleSearch() {
     const search = this.template.querySelector('c-organization-search-results');
+    console.log(this.searchKey);
     search.searchBuinesses(this.searchKey);
   }
 }
